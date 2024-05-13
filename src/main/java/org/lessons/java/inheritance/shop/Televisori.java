@@ -28,10 +28,6 @@ public class Televisori extends Prodotto {
 	return smartTv;
     }
     
-    //metodo per mostrare il prodotto
-    public void caratteristicheProdotto() {
-	System.out.println("Dimensioni: " + dimensioni + "/n");
-    }
-    //da capire come implementare Smart o no
+    
     
 }

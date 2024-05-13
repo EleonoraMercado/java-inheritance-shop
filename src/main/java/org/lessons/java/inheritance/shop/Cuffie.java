@@ -29,7 +29,4 @@ public class Cuffie extends Prodotto {
     }
     
     
-    public void caratteristicheProdotto() {
-   	System.out.println("Le tue cuffie sono:  " + "/n" + "Colore: " + colore + "/n");
-       }
 }

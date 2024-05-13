@@ -69,10 +69,6 @@ public class Prodotto {
 		return random.nextInt(90000000) + 10000000;
 	    }
      
-     public void caratteristicheProdotto() {
-	 System.out.println("Il prodotto " + nome + ":" + "/n" + "Marca: " + marca + "/n"
-		 + "Prezzo: " + prezzo + "/n" + "Iva: " + iva + "/n");
-     }
      
      
 };

@@ -30,7 +30,7 @@ public class Prodotto {
      }
      
      public String setNome() {
-         return nome;
+         return this.nome = nome;
      }
      
      public String getMarca() {
@@ -38,7 +38,7 @@ public class Prodotto {
      }
      
      public String setMarca() {
-         return marca;
+         return this.marca = marca;
      }
      
      public double getPrezzo() {
@@ -46,7 +46,7 @@ public class Prodotto {
      }
      
      public double setPrezzo() {
-         return prezzo;
+         return this.prezzo = prezzo;
      }
      
      public double getIva() {
@@ -54,7 +54,7 @@ public class Prodotto {
      }
      
      public double setIva() {
-         return iva;
+         return this.iva = iva;
      }
      
    //Metodo prezzo+iva

@@ -2,7 +2,7 @@ package org.lessons.java.inheritance.shop;
 
 import java.util.Scanner;
 
-public class Carrello {
+public class Carrello{
 
     public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
@@ -21,47 +21,57 @@ public class Carrello {
 	
 	switch(prodottoAggiunto) {
 		case "smartphone":
-		    p = new Smartphone();
+		    p = new Smartphone("Galaxy S21", "Samsung", 800, 22, "123456789ABCDEF", 256);
 		    break;
 		case "televisori":
-		    p = new Televisori();
+		    p = new Televisori("OLED55B9", "LG", 1200, 22, "55 polici", "Smart tv");
 		    break;
 		case "cuffie":
-		    p= new Cuffie();
+		    p= new Cuffie("WH-1000XM4", "Sony", 350, 22, "Blu", "Wireless");
 		    break;
 		default: 
 		   System.out.println("Inserimento non valido");    
-	    //Alessio devo ancora sistemare questa zona e rivedere bene la successiva.
-		   //Ho fatto dicerse modifiche ai costruttori perche ho difficolta, sto ancora provando.
-	    
+	   
 	}
 	
 	if (p != null) {
-	    p.toString();
+	    System.out.println(p.toString());
 	    p.messaggioSceltaUtente();
 	}
 	scan.close();
     }
     
-    public static void ProdottiDaAcquistare() {
-	Prodotto prodottoScelto = new Prodotto(null, null, 0, 0);
+    
+    
+    
+    
+    
+    
+    //Il codice commentato a seguito l'ho scritto a seguito della lezione
+    //ma non riesco a istanziare nel modo corretto. lo lascio comunque per poterlo
+    //affrontare in sede ticket.
+    
+    /*public static void ProdottiDaAcquistare() {
+	Prodotto prodottoScelto = new Prodotto();
 	prodottoScelto.toString();
 	prodottoScelto.messaggioSceltaUtente();
 	System.out.println(prodottoScelto);
 	
-	Prodotto smartphone = new Smartphone(null, null, 0, 0, null, 0);
+	Prodotto smartphone = new Smartphone();
 	smartphone.toString();
 	smartphone.messaggioSceltaUtente();
 	System.out.println(smartphone);
+	System.out.println(smartphone.toString());
 	
-	Prodotto televisori = new Televisori(null, null, 0, 0, null, null);
+	Prodotto televisori = new Televisori();
 	televisori.toString();
 	televisori.messaggioSceltaUtente();
 	System.out.println(televisori);
 	
-	Prodotto cuffie = new Cuffie(null, null, 0, 0, null, null);
+	Prodotto cuffie = new Cuffie();
 	cuffie.toString();
 	cuffie.messaggioSceltaUtente();
-    }
-
+	System.out.println(cuffie);
+    }*/
+    
 }

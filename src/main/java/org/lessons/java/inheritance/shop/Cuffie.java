@@ -27,6 +27,11 @@ public class Cuffie extends Prodotto {
     public String setWireless() {
 	return wireless;
     }
-    
+   
+    @Override
+    public String toString() {
+	return super.toString() + 
+		", Colore=" + colore + ", Wireless" + wireless;
+    }
     
 }

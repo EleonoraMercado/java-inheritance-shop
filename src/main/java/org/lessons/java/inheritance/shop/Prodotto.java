@@ -69,6 +69,18 @@ public class Prodotto {
 		return random.nextInt(90000000) + 10000000;
 	    }
      
+     public void messaggioSceltaUtente() {
+	 System.out.println("Il prodotto che hai scelto è nel carrello!\n"
+		 + "ora puoi proseguire con i tuoi acquisti.");
+     }
+
+    @Override
+    public String toString() {
+	return "Prodotto codice=" + codice + ", nome=" + nome 
+		+ ", marca=" + marca + ", prezzo=" + prezzo + ", iva="
+		+ iva;
+    }
+    
      
      
-};
+}

@@ -25,10 +25,12 @@ public class Smartphone extends Prodotto {
 	return memoria;
     }
     
-    public void caratteristicheProdotto() {
-	System.out.println("Il tuo smartphone ha codice imei " + codiceImei + "con memoria di " + memoria);
-    }
     
+    @Override
+    public String toString() {
+	return super.toString() + 
+	", Codice Imei=" + codiceImei + ", Memoria=" + memoria;
+    }
     
 
 }

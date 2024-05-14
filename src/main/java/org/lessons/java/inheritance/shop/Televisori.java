@@ -28,6 +28,10 @@ public class Televisori extends Prodotto {
 	return smartTv;
     }
     
-    
+    @Override
+    public String toString() {
+	return super.toString() + 
+		", Dimensioni=" + dimensioni + ", SmartTv" + smartTv;
+    }
     
 }

@@ -29,32 +29,32 @@ public class Prodotto {
          return nome;
      }
      
-     public String setNome() {
-         return this.nome = nome;
+     public void setNome(String nuovoNome ) {
+	 this.nome = nuovoNome;
      }
      
      public String getMarca() {
          return marca;
      }
      
-     public String setMarca() {
-         return this.marca = marca;
+     public void setMarca(String nuovaMarca) {
+         this.marca = nuovaMarca;
      }
      
      public double getPrezzo() {
          return prezzo;
      }
      
-     public double setPrezzo() {
-         return this.prezzo = prezzo;
+     public void setPrezzo(double nuovoPrezzo) {
+          this.prezzo = nuovoPrezzo;
      }
      
      public double getIva() {
          return iva;
      }
      
-     public double setIva() {
-         return this.iva = iva;
+     public void setIva(double nuovaIva) {
+          this.iva = nuovaIva;
      }
      
    //Metodo prezzo+iva

@@ -16,16 +16,16 @@ public class Televisori extends Prodotto {
 	return dimensioni;
     }
     
-    public String setDimensioni() {
-	return dimensioni;
+    public void setDimensioni(String nuoveDimensioni) {
+	this.dimensioni = nuoveDimensioni;
     }
     
     public String getSmartTv() {
 	return smartTv;
     }
     
-    public String setSmartTv() {
-	return smartTv;
+    public void setSmartTv(String nuovoSmartTv) {
+	this.smartTv = nuovoSmartTv;
     }
     
     @Override

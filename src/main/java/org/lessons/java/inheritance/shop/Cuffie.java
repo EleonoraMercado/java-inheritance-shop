@@ -16,16 +16,16 @@ public class Cuffie extends Prodotto {
 	return colore;
     }
     
-    public String setColore() {
-	return colore;
+    public void setColore(String nuovoColore) {
+	this.colore = nuovoColore;
     }
     
     public String getWireless() {
 	return wireless;
     }
     
-    public String setWireless() {
-	return wireless;
+    public void setWireless(String nuovoWireless) {
+	this.wireless = nuovoWireless;
     }
    
     @Override
